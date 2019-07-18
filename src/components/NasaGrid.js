@@ -18,9 +18,6 @@ export default function NasaGrid({ limit }) {
     }, []);
 
     return (
-        <div className="nasa-grid">
-            <p className="sagan-quote">"There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world."  -Carl Sagan</p>
-            <NasaCard imgUrl={nasaPic.url} />
-        </div>
+            <NasaCard imgUrl={nasaPic.url} imgTitle={nasaPic.title} imgExplanation={nasaPic.explanation} />
     );
 }
